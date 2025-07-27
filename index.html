@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay Bhaliya - PHP Laravel Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="app.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Akshay Bhaliya</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1>Hi, I'm Akshay Bhaliya</h1>
+                    <p>PHP Laravel Web Developer passionate about creating dynamic web applications and delivering exceptional user experiences. Looking to contribute to innovative projects while continuously enhancing my skills in web development.</p>
+                    <a href="#contact" class="btn-custom">Get In Touch</a>
+                    <a href="/akshayresume.pdf" class="btn-custom ms-3" onclick="downloadResume()">
+                        <i class="fas fa-download me-2"></i>Download Resume
+                    </a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="profile-img-container" style="position: relative;">
+                        <div class="profile-img" style="background: linear-gradient(45deg, #3498db, #2c3e50); display: flex; align-items: center; justify-content: center; color: white; font-size: 4rem;">
+                            <!-- <i class="fas fa-user"></i> -->
+                            <img src="/profile4.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="lead">I am a dedicated PHP Laravel Web Developer with hands-on experience in building dynamic web applications. Currently working at Dasinfomedia Pvt. Ltd., I specialize in Laravel development, AI chatbot integration, and full-stack web solutions. I graduated with a BE in Information Technology from Government Engineering College Modasa with a CGPA of 8.38/10.0.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h5><i class="fas fa-map-marker-alt text-primary me-2"></i>Location</h5>
+                            <p>Mahuva, Bhavnagar, Gujarat</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5><i class="fas fa-graduation-cap text-primary me-2"></i>Education</h5>
+                            <p>BE in Information Technology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section contact-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Skills & Technologies</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fab fa-html5 skill-icon" style="color: #e34f26;"></i>
+                    <div class="skill-name">HTML5</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-css3-alt skill-icon" style="color: #1572b6;"></i>
+                    <div class="skill-name">CSS3</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-bootstrap skill-icon" style="color: #7952b3;"></i>
+                    <div class="skill-name">Bootstrap</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js-square skill-icon" style="color: #f7df1e;"></i>
+                    <div class="skill-name">JavaScript</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-php skill-icon" style="color: #777bb4;"></i>
+                    <div class="skill-name">PHP</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-laravel skill-icon" style="color: #ff2d20;"></i>
+                    <div class="skill-name">Laravel</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database skill-icon" style="color: #4479a1;"></i>
+                    <div class="skill-name">MySQL</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-github skill-icon" style="color: #181717;"></i>
+                    <div class="skill-name">GitHub</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-code skill-icon" style="color: #007acc;"></i>
+                    <div class="skill-name">VS Code</div>
+                </div>
+                <div class="skill-item">
+                    <!-- <i class="fas fa-cog skill-icon" style="color: #ff6600;"></i> -->
+                    <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" class="skill-icon" style="width:50px; height:50px; display:inline">
+                    <div class="skill-name">Postman</div>
+                </div>
+                <div class="skill-item">
+                    <!-- <i class="fas fa-mobile-alt skill-icon" style="color: #61dafb;"></i> -->
+                    <img src="https://www.vectorlogo.zone/logos/jquery/jquery-icon.svg" alt="jQuery" class="skill-icon" style="width:50px; height:50px; display:inline">
+                    <div class="skill-name">jQuery</div>
+                </div>
+                <div class="skill-item">
+                    <!-- <i class="fas fa-exchange-alt skill-icon" style="color: #0088cc;"></i> -->
+                    <img src="https://cdn-icons-png.flaticon.com/512/907/907813.png" alt="AJAX" class="skill-icon" style="width:50px; height:50px; display:inline">
+                    <div class="skill-name">AJAX</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Experience</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="experience-item">
+                        <h4>Web Developer</h4>
+                        <div class="company-name">Dasinfomedia Pvt. Ltd. - Ahmedabad</div>
+                        <div class="duration">Aug 2024 – Present</div>
+                        <ul>
+                            <li>Gained hands-on experience by working on live Laravel projects, including debugging, staging, and production deployment using GitHub</li>
+                            <li>Implemented and managed AI-based chatbot features, contributing to product enhancement using conversational AI agents</li>
+                            <li>Provided technical customer support, handled project hosting, and performed installation services on client cPanels</li>
+                            <li>Integrated features like CSV data import/export and SMS gateway services (Twilio, Clickatell, MSG91) across multiple projects</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <h4>Web Development Internship</h4>
+                        <div class="company-name">ITHub Software Solutions, Bhavanagar</div>
+                        <div class="duration">Jan 2024 – April 2024</div>
+                        <ul>
+                            <li>Completed a 4-month internship in web development, focusing on front-end and back-end technologies</li>
+                            <li>Gained hands-on experience with HTML, CSS, Bootstrap, JavaScript, PHP, and MySQL</li>
+                            <li>Contributed to the design, development, and maintenance of responsive and dynamic web applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section contact-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projects</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="accordion" id="projectsAccordion">
+                        <!-- Personal Projects -->
+                        <div class="accordion-item mb-3" style="border: none; border-radius: 15px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#personalProjects" style="background: var(--primary-color); color: white; font-weight: 600;">
+                                    <i class="fas fa-user-code me-2"></i>Personal Projects
+                                </button>
+                            </h2>
+                            <div id="personalProjects" class="accordion-collapse collapse show" data-bs-parent="#projectsAccordion">
+                                <div class="accordion-body" style="background: white;">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <div class="project-card" onclick="window.open('https://github.com/AgroBusinessWeb', '_blank')">
+                                                <div class="project-img">
+                                                    <i class="fas fa-seedling"></i>
+                                                </div>
+                                                <div class="project-content">
+                                                    <h5 class="project-title">Agro Business Web</h5>
+                                                    <p>Platform for farmers and agri-dealers to manage product listings, inquiries, and communication using Laravel.</p>
+                                                    <span class="project-tech">Laravel</span>
+                                                    <span class="project-tech">PHP</span>
+                                                    <span class="project-tech">MySQL</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="project-card" onclick="window.open('https://github.com/crud-app', '_blank')">
+                                                <div class="project-img">
+                                                    <i class="fas fa-database"></i>
+                                                </div>
+                                                <div class="project-content">
+                                                    <h5 class="project-title">Laravel CRUD App</h5>
+                                                    <p>Full-featured CRUD application using Laravel with form validation, pagination, and user-friendly UI.</p>
+                                                    <span class="project-tech">Laravel</span>
+                                                    <span class="project-tech">Bootstrap</span>
+                                                    <span class="project-tech">JavaScript</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Live Projects -->
+                        <div class="accordion-item mb-3" style="border: none; border-radius: 15px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#liveProjects" style="background: var(--secondary-color); color: white; font-weight: 600;">
+                                    <i class="fas fa-rocket me-2"></i>Live Projects
+                                </button>
+                            </h2>
+                            <div id="liveProjects" class="accordion-collapse collapse show" data-bs-parent="#projectsAccordion">
+                                <div class="accordion-body" style="background: white;">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <div class="project-card" onclick="window.open('https://pushnifty.com/dasinfoau/php/garage/login', '_blank')">
+                                                <div class="project-img">
+                                                    <!-- <i class="fas fa-car"></i> -->
+                                                    <img src="/Garage_preview_400.jpg" class=""  height="100%" width="100%">
+                                                </div>
+                                                <div class="project-content">
+                                                    <h5 class="project-title">Garage Master Web App</h5>
+                                                    <p>Enhanced web application with new features and bug fixes. Integrated multiple SMS gateways for communication workflows.</p>
+                                                    <span class="project-tech">Laravel</span>
+                                                    <span class="project-tech">SMS Gateway</span>
+                                                    <span class="project-tech">Twilio</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="project-card" onclick="window.open('https://pushnifty.com/dasinfoau/php/gym/users/login', '_blank')">
+                                                <div class="project-img">
+                                                    <!-- <i class="fas fa-dumbbell"></i> -->
+                                                    <img src="/gymmaster.jpg" class=""  height="100%" width="100%">
+                                                </div>
+                                                <div class="project-content">
+                                                    <h5 class="project-title">Gym Master App</h5>
+                                                    <p>Worked on resolving application bugs to improve functionality and user experience with customer support integration.</p>
+                                                    <span class="project-tech">CakePHP</span>
+                                                    <span class="project-tech">MySQL</span>
+                                                    <span class="project-tech">PHP</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="project-card" onclick="window.open('https://aiagent.yaraai.com/ai-sales-agent/', '_blank')">
+                                                <div class="project-img">
+                                                    <i class="fas fa-robot"></i>
+                                                </div>
+                                                <div class="project-content">
+                                                    <h5 class="project-title">AI Agent Chatbot</h5>
+                                                    <p>Real-time chatbot system integrated into healthcare platform with WordPress plugin and Laravel dashboard.</p>
+                                                    <span class="project-tech">Laravel</span>
+                                                    <span class="project-tech">Python</span>
+                                                    <span class="project-tech">WordPress</span>
+                                                    <span class="project-tech">AI</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="project-card" onclick="window.open('https://dasinfomedia.com/bga-app/', '_blank')">
+                                                <div class="project-img">
+                                                    <!-- <i class="fas fa-golf-ball"></i> -->
+                                                    <img src="/BGA.png" class=""  height="100%" width="100%">
+                                                </div>
+                                                <div class="project-content">
+                                                    <h5 class="project-title">BGA App - Blackly Golf Association</h5>
+                                                    <p>Managed backend APIs for bet creation, winner declaration, course management, and GroupMe integration.</p>
+                                                    <span class="project-tech">Laravel</span>
+                                                    <span class="project-tech">API Development</span>
+                                                    <span class="project-tech">Integration</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-info">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <h5>Email</h5>
+                                    <p><a href="mailto:bhaliyaakshay27@gmail.com">bhaliyaakshay27@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <h5>Phone</h5>
+                                    <p><a href="tel:+919377427987">+91 9377427987</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <h5>Location</h5>
+                                    <p>Mahuva, Bhavnagar<br>Gujarat, India</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/akshay-bhaliya-0845b7257" class="social-link" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/Akshaybhaliya123" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:bhaliyaakshay27@gmail.com" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Akshay Bhaliya. All rights reserved. | Made with <i class="fas fa-heart text-danger"></i> for web development</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+   </body>
+    </html>
