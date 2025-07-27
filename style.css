@@ -114,6 +114,7 @@ body {
     color: white;
     padding: 12px 30px;
     border: none;
+    margin-right: 10px;
     border-radius: 50px;
     font-weight: 600;
     text-decoration: none;
@@ -365,5 +366,9 @@ body {
     
     .section-title h2 {
         font-size: 2rem;
+    }
+    .btn-custom{
+        margin-bottom: 10px !important;
+        margin-right:10px !important;
     }
 }
