@@ -1,5 +1,5 @@
 
-// Navbar scroll effect
+// Navbar scroll effect with enhanced styling
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
@@ -23,7 +23,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Intersection Observer for animations
+// Enhanced Intersection Observer for animations
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -38,15 +38,52 @@ const observer = new IntersectionObserver(function(entries) {
     });
 }, observerOptions);
 
-// Observe skill items for animation
+// Observe all animatable elements for animation
 document.addEventListener('DOMContentLoaded', function() {
+    // Skill items
     const skillItems = document.querySelectorAll('.skill-item');
     skillItems.forEach((item, index) => {
         item.style.opacity = '0';
         item.style.transform = 'translateY(30px)';
-        item.style.transition = `all 0.6s ease ${index * 0.1}s`;
+        item.style.transition = `all 0.6s ease ${index * 0.05}s`;
         observer.observe(item);
     });
+
+    // Project cards
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = `all 0.6s ease ${index * 0.1}s`;
+        observer.observe(card);
+    });
+
+    // Experience items
+    const experienceItems = document.querySelectorAll('.experience-item');
+    experienceItems.forEach((item, index) => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(30px)';
+        item.style.transition = `all 0.6s ease ${index * 0.15}s`;
+        observer.observe(item);
+    });
+
+    // Contact items
+    const contactItems = document.querySelectorAll('.contact-item');
+    contactItems.forEach((item, index) => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(20px)';
+        item.style.transition = `all 0.5s ease ${index * 0.1}s`;
+        observer.observe(item);
+    });
+});
+
+// Add scroll parallax effect to hero section
+window.addEventListener('scroll', function() {
+    const hero = document.querySelector('.hero');
+    if (hero) {
+        hero.style.backgroundPosition = `0 ${window.scrollY * 0.5}px`;
+    }
+});
 
     const experienceItems = document.querySelectorAll('.experience-item');
     experienceItems.forEach((item, index) => {
